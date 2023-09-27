@@ -1,3 +1,299 @@
-.hidden {
-    display: none;
-}
+body {
+    margin:0;
+    text-align: center;
+    position:relative;
+    font-family: 'Noto Sans KR', sans-serif;
+    width:100vw;
+    height:100vh;
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  .hidden {
+    display:none;
+  }
+  
+  img {
+    position:absolute;
+    width:100%;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -1;
+    opacity:80%;
+    margin:auto;
+  
+    }
+  
+    #clock {
+      color: white;
+      font-size: 140px;
+      position:absolute;
+      margin:0;
+      top: 400px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    #greeting {
+      width:400px;
+      color:white;
+      font-size: 60px;
+      position:absolute;
+      margin:0;
+      top: 550px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    #quote {
+      color:white;
+      font-size: 20px;
+      position:absolute;
+      margin:0;
+      top: 880px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width:80%;
+    }
+  
+    #login-form {
+      position:absolute;
+      margin:0;
+      top: 550px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width:350px;
+    }
+  
+    #login-form input:first-child {
+      height:40px;
+      width:250px;
+      margin-right:10px;
+      text-align: center;
+      font-size: 15px;
+    }
+  
+    #login-form input:last-child {
+      height:48px;
+      background-color: black;
+      color:white;
+      border-radius: 5px;
+      border:2px solid white;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+  
+    #todo-list {
+      background-color:white;
+      font-size: 20px;
+      position:absolute;
+      margin:0;
+      bottom: 50px;
+      right: 20px;
+      list-style-type: none;
+      padding-left:0;
+      border-radius: 5px;
+      font-weight:600;
+      z-index:1;
+    }
+  
+    #todo-list li{
+      width: 250px;
+      margin-top:5px;
+      margin-bottom:5px;
+      font-weight:500;
+  
+    }
+  
+    #todo-list span{
+      margin-right:15px;
+      color:black;
+      width:190px;
+      display: inline-block;
+  
+    }
+  
+    #todo-list input{
+      background-color: mediumaquamarine;
+      color:white;
+      transform : scale(1.5);
+      margin:0;
+      margin-bottom:10px;
+      position: relative;
+      top: -2px;
+    }
+  
+    #weather span:first-child{
+      position:absolute;
+      right:30px;
+      top:10px;
+      font-size:25px;
+      color: white;
+    }
+  
+    #weather span:last-child{
+      position:absolute;
+      right:30px;
+      top:50px;
+      font-size:23px;
+      color: white;
+      font-weight:600;
+    }
+  
+  
+    #question{
+      position:absolute;
+      color:white;
+      font-size:35px;
+      top: 700px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight:500;
+    }
+  
+    #todo-form {
+      position: absolute;
+      top: 780px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    #todo-form input {
+      border:none;
+      background-color: transparent;
+      text-align:center;
+      width:350px;
+      height:30px;
+      font-size:30px;
+      border-bottom:2px solid white;
+      color:white;
+      outline:none;
+      padding-bottom:10px;
+    }
+  
+  
+    @media all and (max-width:1600px) {
+      #quote{
+        width:40%;
+      }
+    } 
+  
+    /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+    @media all and (min-width:768px) and (max-width:1023px) {
+      
+    } 
+  
+    /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
+    @media all and (max-width:767px) {
+      #quote{
+        font-size: 15px;
+      }
+  
+      #todo-list {
+        right:3%;
+        font-size:17px;
+      }
+  
+      #todo-list li {
+        width:150px;
+        font-size:15px;
+      }
+  
+      #todo-list span {
+        width:100px;
+      }
+  
+    }
+      @media all and (max-width:480px) {
+        body {
+          margin:0;
+          text-align: center;
+          position:relative;
+          overflow: hidden;
+          width:100vw;
+          height:100vh;
+        }
+  
+        #clock {
+          font-size:80px;
+          top:120px;
+        }
+  
+        #greeting {
+          font-size:50px;
+          top:210px;
+        }
+  
+        #question {
+          font-size:30px;
+          width:270px;
+          top:540px;
+        }
+  
+        #todo-form {
+          top:620px;
+        }
+  
+        #quote {
+          width:250px;
+          top:700px;
+        }
+  
+        img{
+          position:absolute;
+          top: 270px;
+          width:100%;
+          z-index: -1;
+          opacity:80%;
+          margin:0;
+        }
+  
+        #todo-list {
+          background-color:white;
+          font-size: 20px;
+          position:absolute;
+          top: 280px;
+          bottom:initial;
+          right: 60px;
+          left: 60px;
+          list-style-type: none;
+          padding-left:0;
+          border-radius: 5px;
+          font-weight:600;
+          z-index:1;
+        }
+      
+        #todo-list li{
+          margin:0;
+  
+          width: 100%;
+          margin-top:5px;
+          margin-bottom:5px;
+          font-weight:500;
+          align-items: center;
+          display:flex;
+          justify-content: center;
+        }
+      
+        #todo-list span{
+          margin-right:15px;
+          color:black;
+          width:190px;
+          display: inline-block;
+  
+        }
+      
+        #todo-list input{
+          background-color: mediumaquamarine;
+          color:white;
+          transform : scale(1.5);
+          margin:0;
+          margin-bottom:10px;
+          position: relative;
+          top: 4.5px;
+        }
+  
+  
+    }
