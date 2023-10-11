@@ -54,7 +54,3 @@ if(savedToDos !== null) {
 }
 
 
-function sexyFilter() {
-    
-}
-
